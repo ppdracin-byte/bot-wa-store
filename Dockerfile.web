@@ -1,0 +1,17 @@
+# Dockerfile.web
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY web-panel/package*.json ./
+RUN npm install
+
+COPY web-panel/src ./src
+COPY web-panel/*.js ./
+COPY web-panel/*.json ./
+
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["npm", "start"]

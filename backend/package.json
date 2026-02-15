@@ -1,0 +1,34 @@
+{
+  "name": "whatsapp-store-backend",
+  "version": "1.0.0",
+  "description": "WhatsApp Store Bot Backend with VIP Reseller & Medan Pedia Integration",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "sync": "node src/jobs/syncProducts.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.6.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "redis": "^4.6.8",
+    "bull": "^4.11.3",
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "qrcode-terminal": "^0.12.0",
+    "pino": "^8.15.1",
+    "pino-pretty": "^10.2.0",
+    "node-cron": "^3.0.2",
+    "express-rate-limit": "^6.10.0",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
