@@ -1,14 +1,13 @@
-# Dockerfile.web
 FROM node:18-alpine
 
 WORKDIR /app
 
-COPY web-panel/package*.json ./
+COPY package*.json ./
 RUN npm install
 
-COPY web-panel/src ./src
-COPY web-panel/*.js ./
-COPY web-panel/*.json ./
+COPY src ./src
+COPY *.js ./
+COPY *.json ./
 
 RUN npm run build
 
