@@ -1,0 +1,94 @@
+# ============================================
+# WHATSAPP STORE BOT - ENVIRONMENT CONFIGURATION
+# ============================================
+
+# --------------------------------------------
+# SERVER CONFIGURATION
+# --------------------------------------------
+PORT=3000
+NODE_ENV=production
+FRONTEND_URL=http://localhost:3001
+BASE_URL=https://your-domain.com
+
+# --------------------------------------------
+# DATABASE CONFIGURATION (PostgreSQL)
+# --------------------------------------------
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=whatsapp_store
+DB_USER=postgres
+DB_PASSWORD=your_secure_password_here_change_this
+
+# --------------------------------------------
+# REDIS CONFIGURATION
+# --------------------------------------------
+REDIS_URL=redis://localhost:6379
+# REDIS_PASSWORD=your_redis_password_if_any
+
+# --------------------------------------------
+# JWT AUTHENTICATION
+# --------------------------------------------
+JWT_SECRET=your_super_secret_jwt_key_min_32_characters_long
+JWT_EXPIRES_IN=7d
+
+# --------------------------------------------
+# VIP RESELLER API CONFIGURATION
+# --------------------------------------------
+VIP_RESELLER_API_ID=V5jToQ6L
+VIP_RESELLER_API_KEY=2tnwHhRMOi0aIG2QP0KBtaH3QWDbJrFcOPFqcIVa19Rbp2NWZpq4Dr68viILEFt8
+VIP_RESELLER_SIGN=a75444fea5bed61bf11868317d6a8c01
+VIP_RESELLER_BASE_URL=https://vip-reseller.co.id/api
+
+# --------------------------------------------
+# MEDAN PEDIA API CONFIGURATION
+# --------------------------------------------
+MEDAN_PEDIA_API_ID=14295
+MEDAN_PEDIA_API_KEY=abqc1l-13rer4-koj79o-zg1xlj-lmctrk
+MEDAN_PEDIA_BASE_URL=https://medanpedia.co.id/api
+
+# --------------------------------------------
+# WEBHOOK CONFIGURATION
+# --------------------------------------------
+WEBHOOK_SECRET=your_webhook_secret_key_for_security
+WEBHOOK_PATH_VIP=/api/webhooks/vip-reseller
+WEBHOOK_PATH_MEDAN=/api/webhooks/medan-pedia
+
+# --------------------------------------------
+# DEFAULT ADMIN CONFIGURATION
+# --------------------------------------------
+ADMIN_PHONE=6281234567890
+ADMIN_PASSWORD=admin123_change_this_immediately
+
+# --------------------------------------------
+# OPTIONAL: PAYMENT GATEWAY (Future Use)
+# --------------------------------------------
+# MIDTRANS_SERVER_KEY=your_midtrans_server_key
+# MIDTRANS_CLIENT_KEY=your_midtrans_client_key
+# XENDIT_API_KEY=your_xendit_api_key
+
+# --------------------------------------------
+# OPTIONAL: EMAIL NOTIFICATIONS
+# --------------------------------------------
+# SMTP_HOST=smtp.gmail.com
+# SMTP_PORT=587
+# SMTP_USER=your_email@gmail.com
+# SMTP_PASS=your_app_password
+# SMTP_FROM=noreply@yourstore.com
+
+# --------------------------------------------
+# OPTIONAL: TELEGRAM NOTIFICATIONS
+# --------------------------------------------
+# TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+# TELEGRAM_CHAT_ID=your_telegram_chat_id
+
+# --------------------------------------------
+# LOGGING CONFIGURATION
+# --------------------------------------------
+LOG_LEVEL=info
+# LOG_LEVEL=debug (for development)
+
+# --------------------------------------------
+# RATE LIMITING
+# --------------------------------------------
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX_REQUESTS=100
