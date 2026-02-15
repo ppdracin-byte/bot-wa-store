@@ -1,0 +1,19 @@
+# ============================================
+# GLOBAL PROJECT ENVIRONMENT
+# ============================================
+
+# Git Configuration (Your Email)
+GIT_USER_EMAIL=ppdracin@gmail.com
+GIT_USER_NAME=Your Name
+
+# Project Paths
+PROJECT_NAME=whatsapp-store-bot
+PROJECT_VERSION=1.0.0
+
+# Deployment
+DEPLOY_ENV=production
+SERVER_IP=your_server_ip_here
+DOMAIN=your-domain.com
+
+# SSL Configuration (Let's Encrypt)
+SSL_EMAIL=ppdracin@gmail.com
